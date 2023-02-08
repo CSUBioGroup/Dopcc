@@ -3,7 +3,6 @@ import numpy as np
 import math
 from collections import defaultdict
 import pandas as pd
-from scipy.stats import pearsonr
 from tqdm.autonotebook import tqdm,trange
 import argparse
 
@@ -12,7 +11,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Core attachment based on Local and Global information.')
     parser.add_argument('--input', default='datasets/BioGRID_network.txt')
     parser.add_argument('--output', default='results/temp.txt')
-    parser.add_argument('--emd', default='emds/BioGRID_network_HSRL_1024_redu_256.txt')
+    parser.add_argument('--emd', default='emds/BioGRID_network_1024_redu_256.txt')
     
     args = parser.parse_args()
     return args
