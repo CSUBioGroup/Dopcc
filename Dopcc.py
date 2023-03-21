@@ -193,12 +193,14 @@ def save_result(complexes, id_protein, result_file):
         for u in complexes.keys():
             cps = complexes[u]
             if len(cps) >= 3:
-                rowid += 1
-                content = str(rowid)
-                for pid in cps:
-                    content = content + ' ' + id_protein[pid]
-                content +='\n'
-                f.writelines(content)
+                # rowid += 1
+                # # content = str(rowid)
+                # content = ''
+                # for pid in cps:
+                #     content = content + ' ' + id_protein[pid]
+                # content +='\n'
+                
+                f.writelines('\t'.join([id_protein[pid] for pid in cps])+'\n')
     print('Save Results to file: ', result_file)
 
 def cal_jcs(id_protein, relations, w):

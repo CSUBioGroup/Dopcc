@@ -200,7 +200,7 @@ def main(args):
         all_emd_file = './emds/temp_embedding.txt'
         save_embeddings(args, hier_graph[0], hier_emb[0], all_emd_file)
         print("Final Embedding Size:{0}".format(args.representation_size//(k+1)))
-        transPCA(all_emd_file, args.representation_size//(k+1) , args.output, emd_size)
+        transPCA(all_emd_file, args.representation_size , args.output, args.representation_size*(k+1))
 
     t2 = time.time()
     print('cost time: %s'%(t2-t1))
