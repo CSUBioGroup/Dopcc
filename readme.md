@@ -20,12 +20,12 @@ Detecting overlapping protein complexes via multi-metrics and co-core attachment
 
 ## Usage
 
-run demo:
+### Run demo:
 ```
-python dopcc.py
+python Dopcc.py
 ```
 
-use specific datasets
+### Apply Dopcc on a specific dataset
 
 1. Run get_embeddings.py to generate embeddings (Hierarchical compression + Node embedding + PCA)
 ```
@@ -33,5 +33,30 @@ python generate_embedding.py --input ./datasets/BioGRID_network.txt --output ./e
 ```
 2. Run Core Attachment method
 ```
-python dopcc.py --input ./datasets/BioGRID_network.txt --output ./results/BioGRID_network.txt --emd ./emds/BioGRID_network.txt
+python Dopcc.py --input ./datasets/BioGRID_network.txt --output ./results/BioGRID_network.txt --emd ./emds/BioGRID_network.txt
 ```
+
+### Parameters
+#### generate_embeddings.py
+
+> --input: PPI network
+>
+> --output: embedding results
+>
+> --represesntation-size: final embedding size (= each layer embedding size)
+>
+> --hs_num: the counts of Hierarchical compression
+
+#### Dopcc.py
+> --input: PPI network
+>
+> --output: predicted protein complexes
+>
+> --emd: embedding results from the generate_embedding.py
+
+
+## Concat
+Please feel free to contact us for any further questions.
+
+- Wenkang Wang wangwk@csu.edu.cn
+- Min Li limin@mail.csu.edu.cn

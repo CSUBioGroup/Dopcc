@@ -1,3 +1,8 @@
+'''
+the code for the process of Hierarchical compression and Node embedding is modified from 
+    https://github.com/guoji-fu/HSRL
+    Fu G, Hou C, Yao X. Learning topological representation for networks via hierarchical sampling[C]//2019 International Joint Conference on Neural Networks (IJCNN). IEEE, 2019: 1-8.
+'''
 import numpy as np
 import random
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
