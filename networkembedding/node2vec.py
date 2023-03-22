@@ -1,5 +1,5 @@
 from gensim.models import Word2Vec
-import hsrl.walker as walker
+import networkembedding.walker as walker
 import time
 import numpy as np
 

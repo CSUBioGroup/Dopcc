@@ -1,5 +1,5 @@
 '''
-the code for the process of Hierarchical compression and Node embedding is modified from 
+the code for the Hierarchical compression and Node embedding is modified from
     https://github.com/guoji-fu/HSRL
     Fu G, Hou C, Yao X. Learning topological representation for networks via hierarchical sampling[C]//2019 International Joint Conference on Neural Networks (IJCNN). IEEE, 2019: 1-8.
 '''
@@ -10,9 +10,9 @@ import matplotlib.pyplot as plt
 import time
 from sklearn.decomposition import PCA
 
-from hsrl.graph import *
-import hsrl.node2vec as node2vec
-from hsrl.hier_samp import louvainModularityOptimization
+from networkembedding.graph import *
+import networkembedding.node2vec as node2vec
+from networkembedding.hier_samp import louvainModularityOptimization
 
 def parse_args():
     parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter,

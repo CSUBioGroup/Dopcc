@@ -1,6 +1,6 @@
 import numpy as np
 import networkx as nx
-from hsrl.graph import *
+from networkembedding.graph import *
 
 
 import random
